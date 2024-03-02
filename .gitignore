@@ -1,0 +1,38 @@
+# Python bytecode files
+*.pyc
+
+# Virtual environment directories
+venv/
+env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files
+*.csv
+*.xls
+*.xlsx
+*.json
+*.pickle
+
+# Model files
+*.h5
+*.pkl
+*.joblib
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.pyc
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# file to ignore
+amazon_products_cleaned.csv
