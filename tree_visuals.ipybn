@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+from sklearn.tree import plot_tree
+from sklearn.ensemble import RandomForestClassifier
+
+# Load the RandomForest model from the file
+model = rf_model
+
+# Extract one tree from the forest
+tree = model.estimators_[0]
+
+# Get feature names
+feature_names = ["Category Name", "Product Description", "Price", "Best Seller", "Product Volume", "Total Spend"] 
+
+# Visualize the tree
+plt.figure(figsize=(40, 30))
+plot_tree(tree, feature_names=feature_names, filled=True, max_depth=3, proportion=False, precision=2)
+plt.show()
